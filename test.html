@@ -33,5 +33,13 @@
     <footer>
         &copy; 2024 Тестовый Магазин. Все права защищены.
     </footer>
+    <script>
+        // При нажатии на кнопку "Купить" выводится сообщение
+        document.querySelectorAll('.buy-btn').forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                alert('Товар добавлен в корзину!');
+            });
+        });
+    </script>
 </body>
 </html>
