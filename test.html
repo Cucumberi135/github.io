@@ -2,26 +2,24 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Брутальный Магазин</title>
+    <title>Тестовый Магазин</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         body {
-            font-family: 'Roboto', 'Arial Black', Arial, sans-serif;
-            background: #181818;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
             margin: 0;
             padding: 0;
-            color: #e0e0e0;
+            color: #222;
         }
         header {
-            background: #222;
-            color: #ff2d2d;
-            padding: 2rem 0;
+            background: #3498db;
+            color: #fff;
+            padding: 1.5rem 0;
             text-align: center;
-            font-size: 2.5rem;
-            letter-spacing: 3px;
+            font-size: 2rem;
             font-weight: bold;
-            text-transform: uppercase;
-            box-shadow: 0 4px 16px #000;
+            letter-spacing: 2px;
         }
         .products {
             display: flex;
@@ -31,104 +29,81 @@
             padding: 2rem;
         }
         .product {
-            background: #232323;
-            border-radius: 8px;
-            box-shadow: 0 4px 16px #111;
-            width: 240px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #ccc;
+            width: 220px;
             text-align: center;
-            padding: 1.2rem;
-            border: 2px solid #ff2d2d;
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-        .product:hover {
-            transform: scale(1.07);
-            box-shadow: 0 8px 32px #ff2d2d55;
+            padding: 1rem;
         }
         .product img {
-            width: 130px;
-            height: 130px;
+            width: 120px;
+            height: 120px;
             object-fit: cover;
-            border-radius: 6px;
+            border-radius: 8px;
             margin-bottom: 1rem;
-            background: #333;
-            border: 2px solid #ff2d2d;
+            background: #eee;
         }
         .product-title {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             font-weight: bold;
-            color: #ff2d2d;
-            margin-bottom: 0.7rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
+            color: #3498db;
+            margin-bottom: 0.5rem;
         }
         .product-price {
-            color: #e0e0e0;
-            font-size: 1.1rem;
+            color: #222;
+            font-size: 1rem;
             margin-bottom: 1rem;
-            font-weight: bold;
         }
         .buy-btn {
-            background: #ff2d2d;
+            background: #3498db;
             color: #fff;
             border: none;
-            border-radius: 4px;
-            padding: 0.7rem 1.5rem;
+            border-radius: 6px;
+            padding: 0.5rem 1.2rem;
             cursor: pointer;
-            font-size: 1.1rem;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            box-shadow: 0 2px 8px #000;
-            transition: background 0.2s, box-shadow 0.2s;
+            font-size: 1rem;
+            transition: background 0.2s;
         }
         .buy-btn:hover {
-            background: #b30000;
-            box-shadow: 0 4px 16px #ff2d2d88;
+            background: #217dbb;
         }
         footer {
             text-align: center;
-            padding: 1.2rem 0;
-            background: #222;
-            color: #ff2d2d;
-            font-size: 1.1rem;
+            padding: 1rem 0;
+            background: #eee;
+            color: #3498db;
+            font-size: 1rem;
             margin-top: 2rem;
-            letter-spacing: 1px;
-            font-weight: bold;
         }
     </style>
 </head>
 <body>
     <header>
-        Брутальный Магазин
+        Тестовый Магазин
     </header>
     <section class="products">
         <div class="product">
-            <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Мягкая игрушка">
-            <div class="product-title">Железный Зверь</div>
-            <div class="product-price">12,99 $</div>
-            <button class="buy-btn">Взять!</button>
+            <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Товар 1">
+            <div class="product-title">Товар 1</div>
+            <div class="product-price">10,00 ₽</div>
+            <button class="buy-btn">Купить</button>
         </div>
         <div class="product">
-            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Милая кружка">
-            <div class="product-title">Кружка Викинга</div>
-            <div class="product-price">8,99 $</div>
-            <button class="buy-btn">Взять!</button>
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Товар 2">
+            <div class="product-title">Товар 2</div>
+            <div class="product-price">15,00 ₽</div>
+            <button class="buy-btn">Купить</button>
         </div>
         <div class="product">
-            <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Милый блокнот">
-            <div class="product-title">Блокнот Командира</div>
-            <div class="product-price">5,99 $</div>
-            <button class="buy-btn">Взять!</button>
-        </div>
-        <div class="product">
-            <img src="https://images.unsplash.com/photo-1511988617509-a57c8a288659?auto=format&fit=crop&w=400&q=80" alt="Милый брелок">
-            <div class="product-title">Брелок Череп</div>
-            <div class="product-price">3,99 $</div>
-            <button class="buy-btn">Взять!</button>
+            <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Товар 3">
+            <div class="product-title">Товар 3</div>
+            <div class="product-price">7,00 ₽</div>
+            <button class="buy-btn">Купить</button>
         </div>
     </section>
     <footer>
-        &copy; 2024 Брутальный Магазин. Все права защищены.
+        &copy; 2024 Тестовый Магазин. Все права защищены.
     </footer>
 </body>
 </html>
